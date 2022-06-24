@@ -35,8 +35,24 @@
 }
 
 .card {
+  background-color: #020204;
+  color: #22b455;
   padding: 4em;
-  border: 1px solid black;
+  border: 1px solid #22b455;
+  letter-spacing: 0.5em;
+}
+.card__title {
+  font-size: 5rem;
+}
+.card__title--large {
+  font-size: 6rem;
+}
+.card__role {
+  font-size: 3rem;
+  text-align: center;
+}
+.card__para {
+  letter-spacing: 0.2em;
 }
 
 .footer {
