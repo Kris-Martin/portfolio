@@ -1,4 +1,40 @@
 * {
+    background: border-box;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #92e5a1;
+    font-size: 1rem;
+    padding: 0.5em 0;
+
+    &__list {
+        min-width: calc(100% / 2);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+
+        &__link {
+            padding: 0.5em 0.5em;
+            color: #020204;
+            text-decoration: none;
+        }
+
+        &__link:hover {
+            background-color: #020204;
+            color: #92e5a1;
+            font-style: bold;
+            text-decoration: none;
+        }
+
+        &__link:active {
+            background-color: #22b455;
+        }
+    }
 }
