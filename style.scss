@@ -7,11 +7,18 @@
 }
 
 .navbar {
+    // Pin header to top and set width to viewport width
+    position: fixed;
+    top: 0;
+    // Sizing
+    width: 100vw;
+    padding: 0.5em 0;
+    // Set contents to display flex
     display: flex;
     justify-content: flex-end;
+    // Styling
     background-color: #92e5a1;
     font-size: 1rem;
-    padding: 0.5em 0;
 
     &__list {
         min-width: calc(100% / 2);
