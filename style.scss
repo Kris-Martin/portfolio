@@ -6,12 +6,16 @@
     padding: 0;
 }
 
+body {
+    position: absolute;
+}
+
 .navbar {
     // Pin header to top and set width to viewport width
     position: fixed;
     top: 0;
     // Sizing
-    width: 100vw;
+    width: 100%;
     padding: 0.5em 0;
     // Set contents to display flex
     display: flex;
@@ -79,6 +83,40 @@
     }
 }
 
+.skills {
+    // Sizing
+    height: 80%;
+    margin-top: 2em;
+    // Set contents to flex
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__circle {
+        // Sizing
+        padding: 1em;
+        width: calc(100vw / 9);
+        height: calc(100vw / 9);
+        // Set contents to flex and center
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // Styling
+        background-color: #92e5a1;
+        border-radius: 100%;
+
+        &__para {
+            // border: 1px solid black;
+            color: #020204;
+            font-size: 100%;
+            font-style: bold;
+            letter-spacing: normal;
+        }
+    }
+}
+
 .contact {
     // Sizing
     height: 80%;
@@ -113,7 +151,7 @@
     position: fixed;
     bottom: 0;
     // Sizing
-    width: 100vw;
+    width: 100%;
     padding: 0.5em 0;
     // Styling
     background-color: #92e5a1;

@@ -5,10 +5,14 @@
   padding: 0;
 }
 
+body {
+  position: absolute;
+}
+
 .navbar {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   padding: 0.5em 0;
   display: flex;
   justify-content: flex-end;
@@ -59,6 +63,32 @@
   letter-spacing: 0.2em;
 }
 
+.skills {
+  height: 80%;
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.skills__circle {
+  padding: 1em;
+  width: 11.1111111111vw;
+  height: 11.1111111111vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #92e5a1;
+  border-radius: 100%;
+}
+.skills__circle__para {
+  color: #020204;
+  font-size: 100%;
+  font-style: bold;
+  letter-spacing: normal;
+}
+
 .contact {
   height: 80%;
   display: flex;
@@ -84,7 +114,7 @@
 .footer {
   position: fixed;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   padding: 0.5em 0;
   background-color: #92e5a1;
   color: #020204;
