@@ -79,6 +79,24 @@
     }
 }
 
+.skills {
+    // Sizing
+    height: 80%;
+    // Set contests to flex
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__circle {
+        // Sizing
+        width: 200px;
+        height: 200px;
+        // Styling
+        background-color: #92e5a1;
+        border-radius: 100%;
+    }
+}
+
 .contact {
     // Sizing
     height: 80%;

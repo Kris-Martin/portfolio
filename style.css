@@ -59,6 +59,19 @@
   letter-spacing: 0.2em;
 }
 
+.skills {
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills__circle {
+  width: 200px;
+  height: 200px;
+  background-color: #92e5a1;
+  border-radius: 100%;
+}
+
 .contact {
   height: 80%;
   display: flex;
