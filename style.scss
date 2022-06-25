@@ -84,6 +84,7 @@
     height: 80%;
     // Set contests to flex
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 
@@ -91,9 +92,22 @@
         // Sizing
         width: 200px;
         height: 200px;
+        // Set contents to flex and center
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         // Styling
         background-color: #92e5a1;
         border-radius: 100%;
+
+        &__para {
+            // border: 1px solid black;
+            color: #020204;
+            font-size: 1.5rem;
+            font-style: bold;
+            letter-spacing: normal;
+        }
     }
 }
 

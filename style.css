@@ -62,14 +62,25 @@
 .skills {
   height: 80%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 .skills__circle {
   width: 200px;
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #92e5a1;
   border-radius: 100%;
+}
+.skills__circle__para {
+  color: #020204;
+  font-size: 1.5rem;
+  font-style: bold;
+  letter-spacing: normal;
 }
 
 .contact {
