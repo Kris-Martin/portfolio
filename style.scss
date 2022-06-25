@@ -79,6 +79,34 @@
     }
 }
 
+.contact {
+    // Sizing
+    height: 80%;
+    // Set contents to flex
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__link {
+        // Sizing
+        width: calc(100vw / 5);
+        height: calc(100vw / 5);
+        // Set contents to flex and center
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // Styling
+        background-color: #92e5a1;
+        font-size: 2rem;
+        border-radius: 100%;
+        border: none;
+    }
+
+    &__link:hover {
+        border: 0.6em solid #22b455;
+    }
+}
+
 .footer {
     // Fix footer to bottom of view
     position: fixed;
