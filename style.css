@@ -77,6 +77,7 @@
   border: none;
 }
 .contact__link:hover {
+  box-sizing: border-box;
   border: 0.6em solid #22b455;
 }
 
