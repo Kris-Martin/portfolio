@@ -5,10 +5,14 @@
   padding: 0;
 }
 
+body {
+  position: absolute;
+}
+
 .navbar {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   padding: 0.5em 0;
   display: flex;
   justify-content: flex-end;
@@ -61,14 +65,16 @@
 
 .skills {
   height: 80%;
+  margin-top: 2em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .skills__circle {
-  width: 200px;
-  height: 200px;
+  padding: 1em;
+  width: 11.1111111111vw;
+  height: 11.1111111111vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +84,7 @@
 }
 .skills__circle__para {
   color: #020204;
-  font-size: 1.5rem;
+  font-size: 100%;
   font-style: bold;
   letter-spacing: normal;
 }
@@ -108,7 +114,7 @@
 .footer {
   position: fixed;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   padding: 0.5em 0;
   background-color: #92e5a1;
   color: #020204;
