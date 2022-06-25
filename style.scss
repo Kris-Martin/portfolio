@@ -72,8 +72,14 @@
 }
 
 .footer {
+    // Fix footer to bottom of view
+    position: fixed;
+    bottom: 0;
+    // Sizing
+    width: 100vw;
+    padding: 0.5em 0;
+    // Styling
     background-color: #92e5a1;
     color: #020204;
-    padding: 0.5em 0;
     text-align: center;
 }
