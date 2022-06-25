@@ -38,9 +38,10 @@
 }
 
 .card {
+  height: 85vh;
+  padding: 4em;
   background-color: #020204;
   color: #22b455;
-  padding: 4em;
   border: 1px solid #22b455;
   letter-spacing: 0.5em;
 }

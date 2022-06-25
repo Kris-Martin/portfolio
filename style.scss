@@ -21,14 +21,19 @@
     font-size: 1rem;
 
     &__list {
+        // Sizing
         min-width: calc(100% / 2);
+        // Set contents to display flex
         display: flex;
         justify-content: space-around;
         align-items: center;
+        // Styling
         list-style: none;
 
         &__link {
+            // Sizing
             padding: 0.5em 0.5em;
+            // Styling
             color: #020204;
             text-decoration: none;
         }
@@ -47,9 +52,12 @@
 }
 
 .card {
+    // Sizing
+    height: 85vh;
+    padding: 4em;
+    // Styling
     background-color: #020204;
     color: #22b455;
-    padding: 4em;
     border: 1px solid #22b455;
     letter-spacing: 0.5em;
 
