@@ -66,7 +66,50 @@ body {
   text-align: center;
 }
 .card__para {
-  letter-spacing: 0.2em;
+  font-size: 1.5rem;
+  margin-top: 1em;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+.projects {
+  height: 80%;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: normal;
+}
+.projects__card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 5px solid #22b455;
+  background-color: #92e5a1;
+  color: #020204;
+}
+.projects__image {
+  height: 80%;
+  width: 50%;
+  object-fit: contain;
+}
+.projects__caption {
+  width: 40%;
+}
+.projects__title {
+  font-size: 2rem;
+}
+.projects__para {
+  font-size: 1.5rem;
+  margin-top: 1em;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: auto;
+}
+.projects__link {
+  font-size: 1.5rem;
 }
 
 .skills {

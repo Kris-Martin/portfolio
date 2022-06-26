@@ -85,7 +85,62 @@ body {
     }
 
     &__para {
-        letter-spacing: 0.2em;
+        font-size: 1.5rem;
+        margin-top: 1em;
+        letter-spacing: 0.1em;
+        line-height: 1.5;
+    }
+}
+
+.projects {
+    // Sizing
+    height: 80%;
+    margin-top: 2em;
+    // Set contents to flex
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // Styling
+    letter-spacing: normal;
+
+    &__card {
+        // Sizing
+        height: 100%;
+        width: 100%;
+        // Set contents to flex
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        // Styling
+        border: 5px solid #22b455;
+        background-color: #92e5a1;
+        color: #020204;
+    }
+
+    &__image {
+        height: 80%;
+        width: 50%;
+        object-fit: contain;
+    }
+
+    &__caption {
+        width: 40%;
+    }
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__para {
+        font-size: 1.5rem;
+        margin-top: 1em;
+        line-height: 1.5;
+        text-align: justify;
+        text-justify: auto;
+    }
+
+    &__link {
+        font-size: 1.5rem;
     }
 }
 
