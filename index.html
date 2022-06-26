@@ -476,5 +476,38 @@
                 <p>Created by Kris Martin June 2022</p>
             </footer>
         </div>
+        <script>
+            const radioOne = document.getElementById("one");
+            const radioTwo = document.getElementById("two");
+            const radioThree = document.getElementById("three");
+
+            const slideOne = document.getElementsByClassName(
+                "projects__card--one",
+            );
+            const slideTwo = document.getElementsByClassName(
+                "projects__card--two",
+            );
+            const slideThree = document.getElementsByClassName(
+                "projects__card--three",
+            );
+
+            radioOne.addEventListener("click", () => {
+                slideOne[0].style.zIndex = 3;
+                slideTwo[0].style.zIndex = 2;
+                slideThree[0].style.zIndex = 1;
+            });
+
+            radioTwo.addEventListener("click", () => {
+                slideOne[0].style.zIndex = 1;
+                slideTwo[0].style.zIndex = 3;
+                slideThree[0].style.zIndex = 2;
+            });
+
+            radioThree.addEventListener("click", () => {
+                slideOne[0].style.zIndex = 2;
+                slideTwo[0].style.zIndex = 1;
+                slideThree[0].style.zIndex = 3;
+            });
+        </script>
     </body>
 </html>
