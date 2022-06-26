@@ -20,6 +20,7 @@ body {
     // Pin header to top and set width to viewport width
     position: fixed;
     top: 0;
+    z-index: 10;
     // Sizing
     width: 100%;
     padding: 0.5em 0;
@@ -63,7 +64,7 @@ body {
 .card {
     // Sizing
     height: 100vh;
-    padding: 4em;
+    padding: 3em;
     // Styling
     background-color: #020204;
     color: #22b455;
@@ -89,12 +90,26 @@ body {
         letter-spacing: 0.1em;
         line-height: 1.5;
     }
+
+    &__slide-buttons {
+        width: 100%;
+        padding-top: 0.6em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        & > input[type="radio"] {
+            border: 0px;
+            width: 100%;
+            height: 1.5em;
+        }
+    }
 }
 
 .projects {
     // Sizing
     height: 80%;
-    margin-top: 2em;
+    margin-top: 1.5em;
     // Set contents to flex
     display: flex;
     justify-content: center;
@@ -103,9 +118,10 @@ body {
     letter-spacing: normal;
 
     &__card {
+        position: absolute;
         // Sizing
-        height: 100%;
-        width: 100%;
+        height: 70vh;
+        width: 80vw;
         // Set contents to flex
         display: flex;
         justify-content: flex-start;
@@ -114,6 +130,18 @@ body {
         border: 5px solid #22b455;
         background-color: #92e5a1;
         color: #020204;
+
+        &--one {
+            z-index: 3;
+        }
+
+        &--two {
+            z-index: 2;
+        }
+
+        &--three {
+            z-index: 1;
+        }
     }
 
     &__image {
@@ -245,6 +273,7 @@ body {
     // Fix footer to bottom of view
     position: fixed;
     bottom: 0;
+    z-index: 10;
     // Sizing
     width: 100%;
     padding: 0.5em 0;
