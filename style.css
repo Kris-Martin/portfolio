@@ -102,24 +102,23 @@ body {
 }
 .projects__title {
   font-size: 2rem;
+  text-align: right;
 }
-.projects__para {
-  font-size: 1.5rem;
-  margin-top: 1em;
-  line-height: 1.5;
-  text-align: justify;
-  text-justify: auto;
+.projects__link-container {
+  display: flex;
+  justify-content: flex-start;
 }
 .projects__link {
-  width: 6em;
+  width: 5em;
   margin-top: 1em;
-  padding: 0.5rem;
+  margin-right: 1em;
+  padding: 0.2em;
   display: flex;
   justify-content: space-between;
   border: 2px solid #020204;
   color: #020204;
   border-radius: 1em;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 .projects__link:hover, .projects__link__svg:hover {
@@ -131,6 +130,13 @@ body {
 .projects__link:active, .projects__link__svg:active {
   background-color: #22b455;
   fill: #92e5a1;
+}
+.projects__para {
+  font-size: 1.5rem;
+  margin-top: 1em;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: auto;
 }
 
 .skills {

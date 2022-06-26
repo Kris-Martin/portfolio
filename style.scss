@@ -131,21 +131,20 @@ body {
 
     &__title {
         font-size: 2rem;
+        text-align: right;
     }
 
-    &__para {
-        font-size: 1.5rem;
-        margin-top: 1em;
-        line-height: 1.5;
-        text-align: justify;
-        text-justify: auto;
+    &__link-container {
+        display: flex;
+        justify-content: flex-start;
     }
 
     &__link {
         // Sizing
-        width: 6em;
+        width: 5em;
         margin-top: 1em;
-        padding: 0.5rem;
+        margin-right: 1em;
+        padding: 0.2em;
         // Set display to flex
         display: flex;
         justify-content: space-between;
@@ -153,7 +152,7 @@ body {
         border: 2px solid #020204;
         color: #020204;
         border-radius: 1em;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-decoration: none;
 
         &:hover,
@@ -169,6 +168,14 @@ body {
             background-color: #22b455;
             fill: #92e5a1;
         }
+    }
+
+    &__para {
+        font-size: 1.5rem;
+        margin-top: 1em;
+        line-height: 1.5;
+        text-align: justify;
+        text-justify: auto;
     }
 }
 
