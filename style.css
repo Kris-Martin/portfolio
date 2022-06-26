@@ -1,8 +1,14 @@
-* {
-  background: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +48,7 @@ body {
 }
 
 .card {
-  height: 85vh;
+  height: 100vh;
   padding: 4em;
   background-color: #020204;
   color: #22b455;
@@ -69,12 +75,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 .skills__circle {
   padding: 1em;
-  width: 11.1111111111vw;
-  height: 11.1111111111vw;
+  width: 14.2857142857vw;
+  height: 14.2857142857vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,7 +90,7 @@ body {
 }
 .skills__circle__para {
   color: #020204;
-  font-size: 100%;
+  font-size: 1.6666666667vw;
   font-style: bold;
   letter-spacing: normal;
 }
@@ -107,7 +113,6 @@ body {
   border: none;
 }
 .contact__link:hover {
-  box-sizing: border-box;
   border: 0.6em solid #22b455;
 }
 

@@ -1,9 +1,15 @@
-* {
-    background: border-box;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -57,7 +63,7 @@ body {
 
 .card {
     // Sizing
-    height: 85vh;
+    height: 100vh;
     padding: 4em;
     // Styling
     background-color: #020204;
@@ -91,13 +97,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
     &__circle {
         // Sizing
         padding: 1em;
-        width: calc(100vw / 9);
-        height: calc(100vw / 9);
+        width: calc(100vw / 7);
+        height: calc(100vw / 7);
         // Set contents to flex and center
         display: flex;
         flex-direction: column;
@@ -110,7 +116,7 @@ body {
         &__para {
             // border: 1px solid black;
             color: #020204;
-            font-size: 100%;
+            font-size: calc(100vw / 60);
             font-style: bold;
             letter-spacing: normal;
         }
@@ -141,7 +147,6 @@ body {
     }
 
     &__link:hover {
-        box-sizing: border-box;
         border: 0.6em solid #22b455;
     }
 }
