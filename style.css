@@ -41,7 +41,6 @@ body {
   background-color: #020204;
   color: #92e5a1;
   font-style: bold;
-  text-decoration: none;
 }
 .navbar__list__link:active {
   background-color: #22b455;
@@ -84,7 +83,7 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   border: 5px solid #22b455;
   background-color: #92e5a1;
@@ -96,7 +95,10 @@ body {
   object-fit: contain;
 }
 .projects__caption {
-  width: 40%;
+  height: 80%;
+  width: 50%;
+  padding: 0 2em;
+  overflow-y: scroll;
 }
 .projects__title {
   font-size: 2rem;
@@ -109,7 +111,26 @@ body {
   text-justify: auto;
 }
 .projects__link {
+  width: 6em;
+  margin-top: 1em;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #020204;
+  color: #020204;
+  border-radius: 1em;
   font-size: 1.5rem;
+  text-decoration: none;
+}
+.projects__link:hover, .projects__link__svg:hover {
+  background-color: #020204;
+  color: #92e5a1;
+  font-style: bold;
+  fill: #92e5a1;
+}
+.projects__link:active, .projects__link__svg:active {
+  background-color: #22b455;
+  fill: #92e5a1;
 }
 
 .skills {
