@@ -49,7 +49,9 @@ body {
 
 .card {
   height: 100vh;
-  padding: 3em;
+  padding: 2em 1em 2em;
+  display: flex;
+  flex-direction: column;
   background-color: #020204;
   color: #22b455;
   border: 1px solid #22b455;
@@ -72,11 +74,10 @@ body {
   line-height: 1.5;
 }
 .card__slide-buttons {
-  width: 100%;
-  padding-top: 0.6em;
+  margin: 0 auto;
+  width: 80%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
 }
 .card__slide-buttons > input[type=radio] {
   border: 0px;
@@ -86,7 +87,6 @@ body {
 
 .projects {
   height: 80%;
-  margin-top: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,12 +105,6 @@ body {
 }
 .projects__card--one {
   z-index: 3;
-}
-.projects__card--two {
-  z-index: 2;
-}
-.projects__card--three {
-  z-index: 1;
 }
 .projects__image {
   height: 80%;
