@@ -20,6 +20,7 @@ body {
     // Pin header to top and set width to viewport width
     position: fixed;
     top: 0;
+    z-index: 10;
     // Sizing
     width: 100%;
     padding: 0.5em 0;
@@ -46,17 +47,16 @@ body {
             // Styling
             color: #020204;
             text-decoration: none;
-        }
 
-        &__link:hover {
-            background-color: #020204;
-            color: #92e5a1;
-            font-style: bold;
-            text-decoration: none;
-        }
+            &:hover {
+                background-color: #020204;
+                color: #92e5a1;
+                font-style: bold;
+            }
 
-        &__link:active {
-            background-color: #22b455;
+            &:active {
+                background-color: #22b455;
+            }
         }
     }
 }
@@ -64,7 +64,9 @@ body {
 .card {
     // Sizing
     height: 100vh;
-    padding: 4em;
+    padding: 2em 1em 2em;
+    display: flex;
+    flex-direction: column;
     // Styling
     background-color: #020204;
     color: #22b455;
@@ -85,7 +87,114 @@ body {
     }
 
     &__para {
-        letter-spacing: 0.2em;
+        font-size: 1.5rem;
+        margin-top: 1em;
+        letter-spacing: 0.1em;
+        line-height: 1.5;
+    }
+
+    &__slide-buttons {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        & > input[type="radio"] {
+            border: 0px;
+            width: 100%;
+            height: 1.5em;
+        }
+    }
+}
+
+.projects {
+    // Sizing
+    height: 80%;
+    // Set contents to flex
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // Styling
+    letter-spacing: normal;
+
+    &__card {
+        position: absolute;
+        // Sizing
+        height: 70vh;
+        width: 80vw;
+        // Set contents to flex
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // Styling
+        border: 5px solid #22b455;
+        background-color: #92e5a1;
+        color: #020204;
+
+        &--one {
+            z-index: 3;
+        }
+    }
+
+    &__image {
+        height: 80%;
+        width: 50%;
+        object-fit: contain;
+    }
+
+    &__caption {
+        height: 80%;
+        width: 50%;
+        padding: 0 2em;
+        overflow-y: scroll;
+    }
+
+    &__title {
+        font-size: 2rem;
+        text-align: right;
+    }
+
+    &__link-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__link {
+        // Sizing
+        width: 5em;
+        margin-top: 1em;
+        margin-right: 1em;
+        padding: 0.2em;
+        // Set display to flex
+        display: flex;
+        justify-content: space-between;
+        //Styling
+        border: 2px solid #020204;
+        color: #020204;
+        border-radius: 1em;
+        font-size: 1.2rem;
+        text-decoration: none;
+
+        &:hover,
+        &__svg:hover {
+            background-color: #020204;
+            color: #92e5a1;
+            font-style: bold;
+            fill: #92e5a1;
+        }
+
+        &:active,
+        &__svg:active {
+            background-color: #22b455;
+            fill: #92e5a1;
+        }
+    }
+
+    &__para {
+        font-size: 1.5rem;
+        margin-top: 1em;
+        line-height: 1.5;
+        text-align: justify;
+        text-justify: auto;
     }
 }
 
@@ -155,6 +264,7 @@ body {
     // Fix footer to bottom of view
     position: fixed;
     bottom: 0;
+    z-index: 10;
     // Sizing
     width: 100%;
     padding: 0.5em 0;
