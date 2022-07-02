@@ -83,16 +83,23 @@ body {
 
 .about {
   align-self: center;
-  margin-top: -6em;
+  margin: auto 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 50vw;
-  height: 50vw;
+  max-width: 90%;
+  height: 90vw;
+  aspect-ratio: 1/1;
   overflow: auto;
   color: #020204;
   background-color: #92e5a1;
+  border: 5px solid #22b455;
   border-radius: 100%;
+}
+@media only screen and (max-width: 498px) {
+  .about {
+    border-radius: 0;
+  }
 }
 .about__para {
   padding: 0 3em;
@@ -101,6 +108,17 @@ body {
   text-align: justify;
   letter-spacing: 0.1em;
   line-height: 1.5;
+}
+@media only screen and (max-width: 498px) {
+  .about__para {
+    padding: 1em;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 499px) and (max-width: 624px) {
+  .about__para {
+    font-size: 1.2rem;
+  }
 }
 
 .projects {

@@ -1,3 +1,5 @@
+@use "devices";
+
 *,
 *:before,
 *:after {
@@ -105,19 +107,25 @@ body {
 
 .about {
     align-self: center;
-    margin-top: -6em;
+    margin: auto 0;
     // Arrange content
     display: flex;
     flex-direction: column;
     justify-content: center;
     // Sizing
-    max-width: 50vw;
-    height: 50vw;
+    max-width: 90%;
+    height: 90vw;
+    aspect-ratio: 1/1;
     overflow: auto;
     // Styling
     color: #020204;
     background-color: #92e5a1;
+    border: 5px solid #22b455;
     border-radius: 100%;
+
+    @include devices.phone {
+        border-radius: 0;
+    }
 
     &__para {
         padding: 0 3em;
@@ -127,6 +135,15 @@ body {
         text-align: justify;
         letter-spacing: 0.1em;
         line-height: 1.5;
+
+        @include devices.phone {
+            padding: 1em;
+            font-size: 1.2rem;
+        }
+
+        @include devices.tablet {
+            font-size: 1.2rem;
+        }
     }
 }
 
