@@ -107,7 +107,7 @@ body {
 
 .about {
     align-self: center;
-    margin: auto 0;
+    margin: auto 0 2em;
     // Arrange content
     display: flex;
     flex-direction: column;
@@ -125,13 +125,14 @@ body {
 
     @include devices.phone {
         border-radius: 0;
+        margin: auto 0;
     }
 
     &__para {
         padding: 0 3em;
         border-radius: 100%;
         // Font
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: justify;
         letter-spacing: 0.1em;
         line-height: 1.5;

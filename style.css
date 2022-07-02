@@ -83,7 +83,7 @@ body {
 
 .about {
   align-self: center;
-  margin: auto 0;
+  margin: auto 0 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,26 +96,27 @@ body {
   border: 5px solid #22b455;
   border-radius: 100%;
 }
-@media only screen and (max-width: 498px) {
+@media only screen and (max-width: 500px) {
   .about {
     border-radius: 0;
+    margin: auto 0;
   }
 }
 .about__para {
   padding: 0 3em;
   border-radius: 100%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: justify;
   letter-spacing: 0.1em;
   line-height: 1.5;
 }
-@media only screen and (max-width: 498px) {
+@media only screen and (max-width: 500px) {
   .about__para {
     padding: 1em;
     font-size: 1.2rem;
   }
 }
-@media only screen and (min-width: 499px) and (max-width: 624px) {
+@media only screen and (min-width: 501px) and (max-width: 624px) {
   .about__para {
     font-size: 1.2rem;
   }
