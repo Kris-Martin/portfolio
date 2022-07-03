@@ -314,4 +314,8 @@ body {
     background-color: #92e5a1;
     color: #020204;
     text-align: center;
+
+    @include devices.phone {
+        position: relative;
+    }
 }
