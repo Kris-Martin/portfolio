@@ -26,7 +26,7 @@ body {
   background-color: #92e5a1;
   font-size: 1rem;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 518px) {
   .navbar {
     justify-content: center;
   }
@@ -38,7 +38,7 @@ body {
   align-items: center;
   list-style: none;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 518px) {
   .navbar__list {
     width: 100%;
   }
@@ -61,27 +61,54 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100vw;
   height: 100vh;
-  padding: 2em 1em 2em;
+  padding: 4em 2em 2em;
   background-color: #020204;
   color: #22b455;
   border: 1px solid #22b455;
   letter-spacing: 0.5em;
 }
 .card__title {
-  font-size: 5rem;
+  font-size: 4rem;
+}
+@media only screen and (max-width: 518px) {
+  .card__title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
 }
 .card__title--large {
   text-align: center;
   font-size: 6rem;
 }
+@media only screen and (max-width: 518px) {
+  .card__title--large {
+    font-size: 2.7rem;
+  }
+}
+@media only screen and (min-width: 519px) and (max-width: 641px) {
+  .card__title--large {
+    font-size: 4.5rem;
+  }
+}
 .card__role {
   font-size: 3rem;
   text-align: center;
 }
+@media only screen and (max-width: 518px) {
+  .card__role {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 519px) and (max-width: 641px) {
+  .card__role {
+    font-size: 2.25rem;
+  }
+}
 .card__slide-buttons {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 0 1em 0;
   display: flex;
   justify-content: center;
 }
@@ -106,7 +133,7 @@ body {
   border: 5px solid #22b455;
   border-radius: 100%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 518px) {
   .about {
     border-radius: 0;
     margin: auto 0;
@@ -120,20 +147,20 @@ body {
   letter-spacing: 0.1em;
   line-height: 1.5;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 518px) {
   .about__para {
     padding: 1em;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
-@media only screen and (min-width: 501px) and (max-width: 624px) {
+@media only screen and (min-width: 519px) and (max-width: 641px) {
   .about__para {
     font-size: 1.2rem;
   }
 }
 
 .projects {
-  height: 80%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,8 +168,8 @@ body {
 }
 .projects__card {
   position: absolute;
-  height: 70vh;
-  width: 80vw;
+  height: 65vh;
+  width: 90vw;
   display: flex;
   align-items: center;
   border: 5px solid #22b455;
@@ -260,7 +287,7 @@ body {
   color: #020204;
   text-align: center;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 518px) {
   .footer {
     position: relative;
   }
