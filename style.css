@@ -66,8 +66,12 @@ body {
   padding: 4em 2em 2em;
   background-color: #020204;
   color: #22b455;
-  border: 1px solid #22b455;
   letter-spacing: 0.5em;
+}
+@media only screen and (max-width: 518px) {
+  .card--no-padding {
+    padding: 4em 0 0;
+  }
 }
 .card__title {
   font-size: 4rem;
@@ -130,12 +134,12 @@ body {
   overflow: auto;
   color: #020204;
   background-color: #92e5a1;
-  border: 5px solid #22b455;
   border-radius: 100%;
 }
 @media only screen and (max-width: 518px) {
   .about {
-    border-radius: 0;
+    height: 50%;
+    border-radius: 2.5em;
     margin: auto 0;
   }
 }
@@ -172,12 +176,18 @@ body {
   width: 90vw;
   display: flex;
   align-items: center;
-  border: 5px solid #22b455;
   background-color: #92e5a1;
   color: #020204;
 }
 .projects__card--one {
   z-index: 3;
+}
+@media only screen and (max-width: 518px) {
+  .projects__card {
+    flex-direction: column;
+    border: none;
+    width: 99%;
+  }
 }
 .projects__image {
   height: 80%;
@@ -185,19 +195,48 @@ body {
   object-fit: contain;
   padding-left: 1.5em;
 }
+@media only screen and (max-width: 518px) {
+  .projects__image {
+    width: 99%;
+    height: 40%;
+    object-fit: contain;
+    padding: 1em 1em;
+  }
+}
 .projects__caption {
   height: 80%;
   width: 50%;
   padding: 0 1.5em;
   overflow-y: scroll;
 }
+@media only screen and (max-width: 518px) {
+  .projects__caption {
+    height: 100%;
+    width: 100%;
+  }
+}
 .projects__title {
   font-size: 2rem;
   text-align: right;
 }
+@media only screen and (max-width: 518px) {
+  .projects__title {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 519px) and (max-width: 641px) {
+  .projects__title {
+    font-size: 1.7rem;
+  }
+}
 .projects__link-container {
   display: flex;
   justify-content: flex-start;
+}
+@media only screen and (max-width: 518px) {
+  .projects__link-container {
+    justify-content: space-between;
+  }
 }
 .projects__link {
   width: 5em;
@@ -211,6 +250,12 @@ body {
   border-radius: 1em;
   font-size: 1.2rem;
   text-decoration: none;
+}
+@media only screen and (max-width: 518px) {
+  .projects__link {
+    font-size: 1rem;
+    margin-right: 0;
+  }
 }
 .projects__link:hover, .projects__link__svg:hover {
   background-color: #020204;
@@ -228,6 +273,16 @@ body {
   line-height: 1.5;
   text-align: justify;
   text-justify: auto;
+}
+@media only screen and (max-width: 518px) {
+  .projects__para {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 519px) and (max-width: 641px) {
+  .projects__para {
+    font-size: 1.2rem;
+  }
 }
 
 .skills {
