@@ -313,6 +313,11 @@ body {
     justify-content: space-around;
     align-items: center;
 
+    @include devices.phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
     &__link {
         // Sizing
         width: calc(100vw / 5);
@@ -326,6 +331,11 @@ body {
         font-size: 2rem;
         border-radius: 100%;
         border: none;
+
+        @include devices.phone {
+            width: calc(100vw / 4);
+            height: calc(100vw / 4);
+        }
     }
 
     &__link:hover {

@@ -262,6 +262,12 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+@media only screen and (max-width: 518px) {
+  .contact {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
 .contact__link {
   width: 20vw;
   height: 20vw;
@@ -272,6 +278,12 @@ body {
   font-size: 2rem;
   border-radius: 100%;
   border: none;
+}
+@media only screen and (max-width: 518px) {
+  .contact__link {
+    width: 25vw;
+    height: 25vw;
+  }
 }
 .contact__link:hover {
   border: 0.6em solid #22b455;
