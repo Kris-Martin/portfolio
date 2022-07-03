@@ -74,7 +74,7 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     // Sizing
     width: 100vw;
     height: 100vh;
@@ -84,17 +84,11 @@ body {
     color: #22b455;
     letter-spacing: 0.5em;
 
-    &--no-padding {
-        @include devices.phone {
-            padding: 4em 0 0;
-        }
-    }
-
     &__title {
         font-size: 4rem;
 
         @include devices.phone {
-            font-size: 3.5rem;
+            font-size: 3rem;
             text-align: center;
         }
 
@@ -109,6 +103,10 @@ body {
             @include devices.tablet {
                 font-size: 4.5rem;
             }
+        }
+
+        &--right {
+            text-align: right;
         }
     }
 
@@ -140,47 +138,93 @@ body {
     }
 }
 
+.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    @include devices.phone {
+        flex-direction: column-reverse;
+    }
+
+    @include devices.tablet {
+        flex-direction: column-reverse;
+    }
+}
+
 .about {
-    align-self: center;
-    margin: auto 0 2em;
-    // Arrange content
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // Sizing
-    max-width: 90%;
-    height: 90vw;
-    aspect-ratio: 1/1;
-    overflow: auto;
-    // Styling
-    color: #020204;
-    background-color: #92e5a1;
-    border-radius: 100%;
-
-    @include devices.phone {
-        height: 50%;
-        border-radius: 2.5em;
-        margin: auto 0;
-    }
+    overflow: scroll;
+    height: 100%;
 
     &__para {
-        padding: 0 3em;
-        border-radius: 100%;
-        // Font
+        width: 100%;
+        padding: 1em;
+        line-height: 1.2;
+        letter-spacing: normal;
         font-size: 1.4rem;
         text-align: justify;
-        letter-spacing: 0.1em;
-        line-height: 1.5;
+        text-justify: inter-word;
+    }
+
+    @include devices.phone {
+        height: 80%;
+        font-size: 1rem;
+        padding-top: 15rem;
+    }
+
+    @include devices.tablet {
+        font-size: 1rem;
+    }
+}
+
+.contact {
+    // Sizing
+    width: 100%;
+    // Set contents to flex
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include devices.phone {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    @include devices.tablet {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    &__link {
+        // Sizing
+        width: calc(100vw / 8);
+        height: calc(100vw / 8);
+        // Set contents to flex and center
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // Styling
+        background-color: #92e5a1;
+        border-radius: 100%;
+        border: none;
 
         @include devices.phone {
-            padding: 1em;
-            // margin-top: 1.5em;
-            font-size: 1rem;
+            width: calc(100vw / 7);
+            height: calc(100vw / 7);
         }
 
         @include devices.tablet {
-            font-size: 1.2rem;
+            width: calc(100vw / 7);
+            height: calc(100vw / 7);
         }
+    }
+
+    &__link:hover {
+        border: 0.6em solid #22b455;
     }
 }
 
@@ -359,7 +403,7 @@ body {
     }
 }
 
-.contact {
+.contact-bottom {
     // Sizing
     height: 80%;
     // Set contents to flex
