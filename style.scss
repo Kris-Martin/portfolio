@@ -274,6 +274,7 @@ body {
 .skills {
     // Sizing
     height: 80%;
+    width: 100%;
     margin-top: 2em;
     // Set contents to flex
     display: flex;
@@ -285,6 +286,7 @@ body {
         // Sizing
         padding: 1em;
         width: calc(100vw / 7);
+        min-width: 70px;
         height: calc(100vw / 7);
         // Set contents to flex and center
         display: flex;
@@ -294,6 +296,11 @@ body {
         // Styling
         background-color: #92e5a1;
         border-radius: 100%;
+
+        @include devices.phone {
+            width: calc(100vw / 5.5);
+            height: calc(100vw / 5.5);
+        }
 
         &__para {
             // border: 1px solid black;

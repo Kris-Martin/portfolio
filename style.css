@@ -232,6 +232,7 @@ body {
 
 .skills {
   height: 80%;
+  width: 100%;
   margin-top: 2em;
   display: flex;
   flex-wrap: wrap;
@@ -241,6 +242,7 @@ body {
 .skills__circle {
   padding: 1em;
   width: 14.2857142857vw;
+  min-width: 70px;
   height: 14.2857142857vw;
   display: flex;
   flex-direction: column;
@@ -248,6 +250,12 @@ body {
   align-items: center;
   background-color: #92e5a1;
   border-radius: 100%;
+}
+@media only screen and (max-width: 518px) {
+  .skills__circle {
+    width: 18.1818181818vw;
+    height: 18.1818181818vw;
+  }
 }
 .skills__circle__para {
   color: #020204;
