@@ -33,6 +33,10 @@ body {
     background-color: #92e5a1;
     font-size: 1rem;
 
+    @include devices.phone {
+        justify-content: center;
+    }
+
     &__list {
         // Sizing
         min-width: calc(100% / 2);
@@ -42,6 +46,10 @@ body {
         align-items: center;
         // Styling
         list-style: none;
+
+        @include devices.phone {
+            width: 100%;
+        }
 
         &__link {
             // Sizing
